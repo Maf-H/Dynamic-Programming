@@ -30,6 +30,7 @@ def fib_top_down(num):
 		return memo[num]
 	memo[num] = fib_top_down(num - 1) + fib_top_down(num - 2)
 	return memo[num]
+	
 t1 = perf_counter()
 print(f"Bottom-Up : {fib_bottom_up(1000): >20}")
 print(perf_counter() - t1)
